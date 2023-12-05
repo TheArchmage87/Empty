@@ -7,3 +7,5 @@ elif x=="t":
     print("I'm tired")
 elif x=="s":
     print("I'm sad")
+elif x=="a":
+    print("I'm annoyed")
