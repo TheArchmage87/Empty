@@ -1,2 +1,3 @@
 x=input()
-if x==""
+if x=="b":
+    print(bord)
