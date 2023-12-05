@@ -1,3 +1,3 @@
 x=input()
 if x=="b":
-    print(bord)
+    print("I'm bored")
