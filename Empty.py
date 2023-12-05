@@ -5,4 +5,5 @@ elif x=="h":
     print("I'm happy")
 elif x=="t":
     print("I'm tired")
-elif x=="s"
+elif x=="s":
+    print("I'm sad")
