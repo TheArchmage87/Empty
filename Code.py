@@ -13,6 +13,7 @@ def add_task():
         time.sleep(1)
         display_menu()
 def remove_task():
+    y=0
     for x in tasks:
         print(y+". "+x)
         y=y+1
@@ -20,14 +21,14 @@ def remove_task():
     if task_remove=="exit" or task_remove=="Exit":
         pass
     else:
-        tasks.remove(int(task_remove))
-    y=1
+        task_remove=int(task_remove)-1
+        tasks.remove(task_remove)
     display_menu()
 def view_tasks():
+    y=0
     for x in tasks:
         print(y+". "+x)
         y=y+1
-    y=1
     input("Press Enter to return to Main Menu.")
     display_menu()
 def end():
@@ -40,12 +41,12 @@ def display_menu():
     print("3. View all tasks")
     print("4. Exit")
     x=input("")
-    if x==1:
+    if x=="1":
         add_task()
-    elif x==2:
+    elif x=="2":
         remove_task()
-    elif x==3:
-        view_task()
-    elif x==4:
+    elif x=="3":
+        view_tasks()
+    elif x=="4":
         end()
 display_menu()
