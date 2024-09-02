@@ -16,11 +16,11 @@ def remove_task():
     for x in tasks:
         print(y+". "+x)
         y=y+1
-    y=input("Type the number of the task to remove or exit to return to main menu.")
-    if task_add=="exit" or task_add=="Exit":
+    task_remove=input("Type the number of the task to remove or exit to return to main menu.")
+    if task_remove=="exit" or task_remove=="Exit":
         pass
     else:
-        tasks.remove(int(y))
+        tasks.remove(int(task_remove))
     y=1
     display_menu()
 def view_tasks():
