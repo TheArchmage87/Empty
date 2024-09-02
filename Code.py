@@ -13,9 +13,9 @@ def add_task():
         time.sleep(1)
         display_menu()
 def remove_task():
-    y=0
+    y=1
     for x in tasks:
-        print(y+". "+x)
+        print(str(y)+". "+x)
         y=y+1
     task_remove=input("Type the number of the task to remove or exit to return to main menu.")
     if task_remove=="exit" or task_remove=="Exit":
@@ -25,9 +25,10 @@ def remove_task():
         tasks.remove(task_remove)
     display_menu()
 def view_tasks():
-    y=0
+    y=1
+    print("To-Do List")
     for x in tasks:
-        print(y+". "+x)
+        print(str(y)+". "+x)
         y=y+1
     input("Press Enter to return to Main Menu.")
     display_menu()
