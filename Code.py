@@ -21,7 +21,7 @@ def remove_task():
     if task_remove=="exit" or task_remove=="Exit":
         pass
     else:
-        task_remove=str(tasks[int(task_remove)-1])
+        task_remove=tasks[int(task_remove)-1]
         tasks.remove(task_remove)
         print(task_remove+" was removed from your To-Do list")
         time.sleep(1)
